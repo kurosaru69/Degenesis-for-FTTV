@@ -1,0 +1,31 @@
+{
+  "name": "degenesis",
+  "title": "Degenesis Rebith",
+  "description": "Trying my best to implement Degenesis in FVTT",
+  "version": "0.1",
+  "author": "Kurosaru, Kain Reicz, Greedyj4ck",
+  "scripts": ["scripts/degenesis.js"],
+  "styles": ["styles/degenesis.css"],
+  "packs": [
+    {
+      "name": "monsters",
+      "label": "Monsters",
+      "system": "degenesis",
+      "module": "degenesis",
+      "path": "packs/monsters.db",
+      "entity": "Actor"
+    },
+    {
+      "name": "items",
+      "label": "Items",
+      "system": "degenesis",
+      "module": "degenesis",
+      "path": "packs/items.db",
+      "entity": "Item"
+    }
+  ],
+  "languages": ["en"],
+  "initiative": "1d20",
+  "gridDistance": 1.5,
+  "gridUnits": "M"
+}

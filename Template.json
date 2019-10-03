@@ -1,0 +1,380 @@
+{
+  "actor": {
+    "status": {
+            "ego": {
+                "type": "Number",
+                "label": "Ego",
+                "current": "0",
+                "max": "2"
+            },
+            "spore-infestations": {
+                "type": "Number",
+                "label": "Spore Infestations",
+                "current": "0",
+                "max": "2"
+            },
+            "fleshwounds": {
+                "type": "Number",
+                "label": "Fleshwounds",
+                "current": "0",
+                "max": "2"
+            },
+            "trauma": {
+                "type": "Number",
+                "label": "Trauma",
+                "current": "0",
+                "max": "2"
+            }
+        }
+    },
+    "Character": {
+		"attributes": {
+		  "bod": {
+			"type": "Number",
+			"label": "Body",
+			"value": 6,
+			"min": 1
+		  },
+		   "agi": {
+			"type": "Number",
+			"label": "Agility",
+			"value": 6,
+			"min": 1
+		  },
+			"cha": {
+			"type": "Number",
+			"label": "Charisma",
+			"value": 6,
+			"min": 1
+		  },
+			"int": {
+			"type": "Number",
+			"label": "Intellect",
+			"value": 6,
+			"min": 1
+		  },
+			"psy": {
+			"type": "Number",
+			"label": "Psyche",
+			"value": 6,
+			"min": 1
+		  },
+			"ins": {
+			"type": "Number",
+			"label": "instinct",
+			"value": 6,
+			"min": 1
+		  }
+	},
+		"origins": {
+			"allies": {
+			"type": "Number",
+			"label": "Allies",
+			"value": 6,
+			"min": 0
+		  },
+		  		  "authority": {
+			"type": "Number",
+			"label": "Authority",
+			"value": 6,
+			"min": 0
+		  },
+		  		  "network": {
+			"type": "Number",
+			"label": "Network",
+			"value": 6,
+			"min": 0
+		  },
+		  		  "renown": {
+			"type": "Number",
+			"label": "Renown",
+			"value": 6,
+			"min": 0
+		  },
+		  		  "rescources": {
+			"type": "Number",
+			"label": "Rescources",
+			"value": 6,
+			"min": 0
+		  },
+		  		  "secrets": {
+			"type": "Number",
+			"label": "Secrets",
+			"value": 6,
+			"min": 0
+			}
+		},
+		"details": {
+		"concept": {
+          "type": "String",
+          "label": "Concept"
+		  },
+		"culture": {
+          "type": "String",
+          "label": "Culture"
+		  },
+		"cult": {
+          "type": "String",
+          "label": "Cult"
+		  },
+		"sex": {
+          "type": "String",
+          "label": "Sex"
+		  },
+		"height": {
+          "type": "String",
+          "label": "Height"
+		  },
+		"weight": {
+          "type": "String",
+          "label": "Weight"
+		  }
+		 },
+		"skills": {
+        "ath": {
+          "type": "Number",
+          "label": "Athletics",
+          "value": 0,
+          "ability": "bod"
+        },
+        "bra": {
+          "type": "Number",
+          "label": "Brawl",
+          "value": 0,
+          "ability": "bod"
+        },
+        "for": {
+          "type": "Number",
+          "label": "Force",
+          "value": 0,
+          "ability": "bod"
+        },
+        "mel": {
+          "type": "Number",
+          "label": "Melee",
+          "value": 0,
+          "ability": "bod"
+        },
+        "sta": {
+          "type": "Number",
+          "label": "Stamina",
+          "value": 0,
+          "ability": "bod"
+        },
+        "tou": {
+          "type": "Number",
+          "label": "Toughness",
+          "value": 0,
+          "ability": "bod"
+        },
+        "cra": {
+          "type": "Number",
+          "label": "Crafting",
+          "value": 0,
+          "ability": "agi"
+        },
+        "dex": {
+          "type": "Number",
+          "label": "Dexterity",
+          "value": 0,
+          "ability": "agi"
+        },
+        "nav": {
+          "type": "Number",
+          "label": "Navigation",
+          "value": 0,
+          "ability": "agi"
+        },
+        "mob": {
+          "type": "Number",
+          "label": "Mobility",
+          "value": 0,
+          "ability": "agi"
+        },
+        "pro": {
+          "type": "Number",
+          "label": "Projectils",
+          "value": 0,
+          "ability": "agi"
+        },
+        "art": {
+          "type": "Number",
+          "label": "Arts",
+          "value": 0,
+          "ability": "cha"
+        },
+        "con": {
+          "type": "Number",
+          "label": "Conduct",
+          "value": 0,
+          "ability": "cha"
+        },
+        "exp": {
+          "type": "Number",
+          "label": "Expression",
+          "value": 0,
+          "ability": "cha"
+        },
+        "led": {
+          "type": "Number",
+          "label": "Leadership",
+          "value": 0,
+          "ability": "cha"
+        },
+        "neg": {
+          "type": "Number",
+          "label": "Negotiation",
+          "value": 0,
+          "ability": "cha"
+        },
+        "sed": {
+          "type": "Number",
+          "label": "Seduction",
+          "value": 0,
+          "ability": "cha"
+        },
+        "arl": {
+          "type": "Number",
+          "label": "Artifact Lore",
+          "value": 0,
+          "ability": "int"
+        },
+		"eng": {
+          "type": "Number",
+          "label": "Engineering",
+          "value": 0,
+          "ability": "int"
+        },
+		"foc": {
+          "type": "Number",
+          "label": "Focus",
+          "value": 0,
+          "ability": "int"
+        },
+		"leg": {
+          "type": "Number",
+          "label": "Legends",
+          "value": 0,
+          "ability": "int"
+        },
+		"med": {
+          "type": "Number",
+          "label": "Medicine",
+          "value": 0,
+          "ability": "int"
+        },
+		"sci": {
+          "type": "Number",
+          "label": "Science",
+          "value": 0,
+          "ability": "int"
+        },
+		"cun": {
+          "type": "Number",
+          "label": "Cunning",
+          "value": 0,
+          "ability": "psy"
+        },
+		"dec": {
+          "type": "Number",
+          "label": "Deception",
+          "value": 0,
+          "ability": "psy"
+        },
+		"dom": {
+          "type": "Number",
+          "label": "Domination",
+          "value": 0,
+          "ability": "psy"
+        },
+		"fai": {
+          "type": "Number",
+          "label": "Faith",
+          "value": 0,
+          "ability": "psy"
+        },
+		"rea": {
+          "type": "Number",
+          "label": "Reaction",
+          "value": 0,
+          "ability": "psy"
+        },
+		"wil": {
+          "type": "Number",
+          "label": "Willpower",
+          "value": 0,
+          "ability": "psy"
+        },
+		"emp": {
+          "type": "Number",
+          "label": "Empathy",
+          "value": 0,
+          "ability": "ins"
+        },
+		"ori": {
+          "type": "Number",
+          "label": "Orienteering",
+          "value": 0,
+          "ability": "ins"
+        },
+		"per": {
+          "type": "Number",
+          "label": "Perception",
+          "value": 0,
+          "ability": "ins"
+        },
+		"prim": {
+          "type": "Number",
+          "label": "Primal",
+          "value": 0,
+          "ability": "ins"
+        },
+		"sur": {
+          "type": "Number",
+          "label": "Survival",
+          "value": 0,
+          "ability": "ins"
+        },
+		"tam": {
+          "type": "Number",
+          "label": "Taming",
+          "value": 0,
+          "ability": "ins"
+        }
+      }
+	},
+  "item": {
+    "data": {
+      "weight": {
+        "type": "Number",
+        "label": "Item Weight"
+      },
+      "price": {
+        "type": "Number",
+        "label": "Item Price"
+	},
+	  "tech":{
+		"type": "Number",
+		"label": "Tech Level"
+	},
+	  "num":{
+		"type": "Number",
+		"label": "Amount"
+		},
+	  "modifiers":{
+		"type": "String",
+		"label": "Modifiers"
+		}
+    },
+    "weapon": {
+      "damage": {
+        "label": "Weapon Damage"
+      }
+    },
+    "trinket": {
+      "ability": {
+        "label": "Special Ability"
+      }
+    }
+  }
+}
