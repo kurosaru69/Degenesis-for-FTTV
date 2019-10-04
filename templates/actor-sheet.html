@@ -1,18 +1,29 @@
 <form class="{{cssClass}}" autocomplete="off">
-
+    
     <header class="sheet-header">
         <img class="profile-img" src="{{actor.img}}" data-edit="img" title="{{actor.name}}" height="100" width="100"/>
         <div class="header-fields">
             <h1 class="charname"><input name="name" type="text" value="{{actor.name}}" placeholder="Name"/></h1>
+            <ul class="details">
+                <li class="character-detail">
+                    <input name="data.details.culture.value" type="text" value="{{data.details.culture.value}}" placeholder="Culture"/>
+                </li>
+                <li class="character-detail">
+                    <input name="data.details.concept.value" type="text" value="{{data.details.concept.value}}" placeholder="Tarot"/>
+                </li>
+                <li class="character-detail">
+                    <input name="data.details.cult.value" type="text" value="{{data.details.cult.value}}" placeholder="Cult"/>
+                </li>
+            </ul>
             <div class="resource">
-                <input type="text" name="data.health.value" value="{{data.health.value}}" data-dtype="Number"/>
+                <input type="text" name="data.fwound.value" value="{{data.fwound.value}}" data-dtype="Number"/>
                 <span> / </span>
-                <input type="text" name="data.health.max" value="{{data.health.max}}" data-dtype="Number"/>
+                <input type="text" name="data.fwound.max" value="{{data.fwound.max}}" data-dtype="Number"/>
             </div>
             <div class="resource">
-                <input type="text" name="data.power.value" value="{{data.power.value}}" data-dtype="Number"/>
+                <input type="text" name="data.trauma.value" value="{{data.trauma.value}}" data-dtype="Number"/>
                 <span> / </span>
-                <input type="text" name="data.power.max" value="{{data.power.max}}" data-dtype="Number"/>
+                <input type="text" name="data.trauma.max" value="{{data.trauma.max}}" data-dtype="Number"/>
             </div>
         </div>
     </header>

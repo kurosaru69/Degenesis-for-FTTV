@@ -13,7 +13,7 @@
                 "current": "0",
                 "max": "2"
             },
-            "fleshwounds": {
+            "fwound": {
                 "type": "Number",
                 "label": "Fleshwounds",
                 "current": "0",
