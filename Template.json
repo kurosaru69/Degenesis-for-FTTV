@@ -1,6 +1,6 @@
 {
   "actor": {
-    "status": {
+      "data": {
             "ego": {
                 "type": "Number",
                 "label": "Ego",
